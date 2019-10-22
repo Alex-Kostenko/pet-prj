@@ -14,7 +14,7 @@ class App extends Component {
       signOut,
       signInWithGoogle,
     } = this.props;
-    
+
     return (
       <div className="App">
         <header className="App-header">
