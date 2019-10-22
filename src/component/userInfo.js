@@ -1,8 +1,8 @@
 import React from 'react';
 import withFirebaseAuth from 'react-with-firebase-auth'
-import * as firebase from 'firebase/app';
+import * as firebase from 'firebase';
 import '@firebase/auth';
-import firebaseConfig from '../firebaseConfig';
+import firebaseConfig from '../firebase/firebaseConfig';
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
@@ -18,7 +18,7 @@ const UserInfo = (props) => {
       <header className="App-header">
 
         {user && <img src={user.photoURL} className="App-logo" alt="logo" />}
-        {console.log(user)}
+
         {
           user
             ? <p>Hello, {user.displayName}</p>

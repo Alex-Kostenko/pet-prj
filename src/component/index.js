@@ -15,7 +15,6 @@ const useStyles = makeStyles(theme => ({
 const MainPage = (props) => {
 
   const classes = useStyles();
-  console.log(classes);
   
   return (
     <ul className={classes.root}>
