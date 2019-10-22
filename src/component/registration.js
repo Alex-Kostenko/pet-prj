@@ -54,3 +54,5 @@ const RenderRegistraion = () => {
     </form>
   )
 }
+
+export default RenderRegistraion;
